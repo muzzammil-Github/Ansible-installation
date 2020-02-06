@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+    - name: installing tomcat
+      yum:
+        name:
+          - httpd
+        state: present
+    - name: start httpd
+      service:
+        name: httpd
+        state: started
