@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+    - name: copy file from master to node
+      copy:
+        src: /home/master/test.txt
+        dest: /home/node1/test.txt
+        owner: root
+        group: root
+        mode: '0777'
