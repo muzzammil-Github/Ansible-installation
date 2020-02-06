@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-    - name: installing tomcat
+    - name: installing httpd
       yum:
         name:
           - httpd
