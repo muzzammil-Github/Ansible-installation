@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+    - name: add test user
+      user:
+        name: test
+        uid: 1040
+        state: present
+        createhome: yes
+        home: /home/test
